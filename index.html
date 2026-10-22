@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Profile Card</title>
+  <title>Profile Card - Suci Nazhiifah</title>
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,7 +15,7 @@
 
   <main class="card-container">
     <div class="profile-card">
-      <!-- Header dengan gambar backgroundprofile.jpg -->
+      <!-- Header dengan gambar backgroundprofile2.jpg -->
       <div class="card-header"></div>
 
       <!-- Konten Utama Card -->
@@ -24,7 +24,7 @@
         <div class="avatar-container">
           <img 
             src="gambarprofile.jpeg" 
-            alt="Foto Profil" 
+            alt="Foto Profil Suci Nazhiifah" 
             class="profile-img"
           >
         </div>
@@ -40,30 +40,126 @@
 
         <div class="divider"></div>
 
-        <!-- Informasi Followers, Likes, & Photos -->
-        <div class="stats-container">
-          <div class="stat-box">
-            <span class="stat-number">85.4K</span>
-            <span class="stat-label">Followers</span>
-          </div>
+        <!-- Bagian Kontak & Portofolio (Instagram, Email, My Work) -->
+        <div class="profile-actions">
+          <!-- Instagram -->
+          <a href="https://instagram.com/ucipah" target="_blank" rel="noopener noreferrer" class="action-card">
+            <div class="action-icon ig-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+              </svg>
+            </div>
+            <div class="action-text">
+              <span class="action-label">Instagram</span>
+              <span class="action-value">@ucipah</span>
+            </div>
+            <div class="action-arrow">↗</div>
+          </a>
 
-          <div class="stat-divider"></div>
+          <!-- Email -->
+          <a href="mailto:suci.nazhiifah@gmail.com" class="action-card">
+            <div class="action-icon email-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                <polyline points="22,6 12,13 2,6"></polyline>
+              </svg>
+            </div>
+            <div class="action-text">
+              <span class="action-label">Email</span>
+              <span class="action-value">suci.nazhiifah@gmail.com</span>
+            </div>
+            <div class="action-arrow">↗</div>
+          </a>
 
-          <div class="stat-box">
-            <span class="stat-number">120K</span>
-            <span class="stat-label">Likes</span>
-          </div>
-
-          <div class="stat-divider"></div>
-
-          <div class="stat-box">
-            <span class="stat-number">342</span>
-            <span class="stat-label">Photos</span>
-          </div>
+          <!-- My Work (Klik untuk membuka galeri popup karya) -->
+          <a href="#my-work-modal" class="action-card work-card-trigger">
+            <div class="action-icon work-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+                <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+              </svg>
+            </div>
+            <div class="action-text">
+              <span class="action-label">Portofolio</span>
+              <span class="action-value">My Work</span>
+            </div>
+            <div class="action-badge">Lihat Karya ↗</div>
+          </a>
         </div>
       </div>
     </div>
   </main>
+
+  <!-- Modal Popup My Work (Pure HTML & CSS) -->
+  <div id="my-work-modal" class="modal-overlay">
+    <a href="#" class="modal-backdrop-close" aria-label="Tutup modal"></a>
+    <div class="modal-card">
+      <div class="modal-header">
+        <div class="modal-title-group">
+          <h3 class="modal-title">My Work</h3>
+          <p class="modal-subtitle">Kumpulan karya dan proyek pilihan oleh Suci Nazhiifah</p>
+        </div>
+        <a href="#" class="modal-close" aria-label="Tutup">&times;</a>
+      </div>
+
+      <!-- Daftar Karya (Anda dapat mengganti gambar, judul, dan deskripsi sesuai karya Anda) -->
+      <div class="works-grid">
+        <!-- Karya 1 -->
+        <div class="work-item">
+          <img 
+            src="https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?auto=format&fit=crop&w=500&q=80" 
+            alt="Proyek Desain 1" 
+            class="work-thumb"
+          >
+          <div class="work-details">
+            <h4 class="work-name">Project Desain 1</h4>
+            <p class="work-desc">Branding & Visual Design</p>
+          </div>
+        </div>
+
+        <!-- Karya 2 -->
+        <div class="work-item">
+          <img 
+            src="https://images.unsplash.com/photo-1542744094-3a31f272c490?auto=format&fit=crop&w=500&q=80" 
+            alt="Proyek UI/UX 2" 
+            class="work-thumb"
+          >
+          <div class="work-details">
+            <h4 class="work-name">UI/UX Design 2</h4>
+            <p class="work-desc">Mobile & Web Design</p>
+          </div>
+        </div>
+
+        <!-- Karya 3 -->
+        <div class="work-item">
+          <img 
+            src="https://images.unsplash.com/photo-1513542789411-b6a5d4f31634?auto=format&fit=crop&w=500&q=80" 
+            alt="Proyek Kreatif 3" 
+            class="work-thumb"
+          >
+          <div class="work-details">
+            <h4 class="work-name">Creative Artwork 3</h4>
+            <p class="work-desc">Illustration & Photography</p>
+          </div>
+        </div>
+
+        <!-- Karya 4 -->
+        <div class="work-item">
+          <img 
+            src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=500&q=80" 
+            alt="Proyek Web 4" 
+            class="work-thumb"
+          >
+          <div class="work-details">
+            <h4 class="work-name">Web Development 4</h4>
+            <p class="work-desc">Frontend & Web Portfolio</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
 </body>
 </html>
